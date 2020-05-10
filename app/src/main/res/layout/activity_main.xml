@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:id="@+id/imViewAndroid"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#56000000"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/lid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:gravity="center"
+                android:hint="Login Id"
+                android:inputType="textEmailAddress"
+                android:padding="4dp"></EditText>
+
+            <EditText
+                android:id="@+id/lpas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/lid"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="4dp"></EditText>
+
+            <TextView
+                android:id="@+id/fpas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lpas"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:text="Forget Password ?"
+                android:textColor="#000000"
+                android:textStyle="italic"></TextView>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fpas"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp">
+
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:text="Login"
+                    android:onClick="LoginAction"
+                    android:textAllCaps="false"
+                    android:textColor="#000">
+
+                </Button>
+
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/signupbut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bottom_card"
+        android:visibility="visible">
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="Signup"
+                android:text="Signup"
+                android:textColor="#68000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#56000000"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/rid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:gravity="center"
+                android:hint="Login Id"
+                android:inputType="textEmailAddress"
+                android:padding="4dp"></EditText>
+
+            <EditText
+                android:id="@+id/rpas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/rid"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="4dp"></EditText>
+
+
+            <EditText
+                android:id="@+id/rno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/rpas"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_dialpad_black_24dp"
+                android:gravity="center"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:padding="4dp"></EditText>
+
+            <EditText
+                android:id="@+id/rname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/rno"
+                android:layout_margin="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:gravity="center"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="4dp"></EditText>
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rname"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp">
+
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:text="Register"
+                    android:onClick="RegisterAction"
+                    android:textAllCaps="false"
+                    android:textColor="#000">
+
+                </Button>
+
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/loginbut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bottom_card"
+        android:visibility="gone">
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:onClick="Login"
+                android:text="Login"
+                android:textColor="#68000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
