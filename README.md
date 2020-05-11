@@ -11,8 +11,10 @@
 
 ### Glass Login Design
 
-Login Security Panel Only Using One
-See project files.
+Login | Signup panel like some glass UI
+Validations in each Editext Fields
+Best use of each library
+
 
 ### Preview 
 
