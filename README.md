@@ -12,7 +12,9 @@
 ### Glass Login Design
 
 Login | Signup panel like some glass UI
+
 Validations in each Editext Fields
+
 Best use of each library
 
 
